@@ -38,7 +38,7 @@ The following environmental variables need to be set
 | `USER_EMAIL`       | Your Sending, SMTP User Email|
 | `USER_PASS` | Your Sending, SMTP User Password                                                            |
 | `DESTINATION_MAILBOX`           | The DID associated with the call control connection to be used for initating calls                                                          |
-| `APP_PORT`             | **Defaults to `8081`** The port the app will be served                                                                                   |
+| `APP_PORT`             | **Defaults to `8000`** The port the app will be served                                                                                   |
 
 
 ### .env file
@@ -76,7 +76,7 @@ $ npm install
 This application is served on the port defined in the runtime environment (or in the `.env` file). Be sure to launch [ngrok](https://developers.telnyx.com/docs/v2/development/ngrok?utm_source=referral&utm_medium=github_referral&utm_campaign=cross-site-link) for that port
 
 ```
-./ngrok http 8081
+./ngrok http 8000
 ```
 
 > Terminal should look _something_ like
