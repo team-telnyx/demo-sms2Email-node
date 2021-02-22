@@ -10,12 +10,12 @@
 			"value": "emailyouwantsms@gmail.com"
 		},
 		"SMTP_USER": {
-			"description": "The number of processes to run.",
+			"description": "The new Gmail Address you Created",
 			"value": "user@gmail.com"
 		},
     	"SMTP_PASS": {
-			"description": "The number of processes to run.",
-			"value": "yourpassword"
+			"description": "The password for the new Gmail address you create",
+			"value": "smtpUserPassword"
 		}
 	},
 
