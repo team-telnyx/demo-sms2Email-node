@@ -1,7 +1,23 @@
 {
-    "name": "Telnyx SMS to Email",
-    "description": "Node.js SMS to Email Sample Powered by Telnyx using Express",
-    "repository": "https://github.com/heroku/node-js-getting-started",
-    "logo": "https://node-js-sample.herokuapp.com/node.png",
-    "keywords": ["node", "express", "static", "telnyx"]
-  }
+	"name": "Telnyx SMS to Email",
+	"description": "Node.js SMS to Email Sample Powered by Telnyx using Express",
+	"repository": "https://github.com/team-telnyx/demo-sms2Email-node",
+	"logo": "https://github.com/team-telnyx/demo-sms2Email-node/blob/main/logo-dark.png",
+	"keywords": ["node", "express", "static", "telnyx"],
+	"env": {
+		"DESTINATION_MAILBOX": {
+			"description": "The Email Address you want to recieve SMS Messages At",
+			"value": "emailyouwantsms@gmail.com"
+		},
+		"SMTP_USER": {
+			"description": "The number of processes to run.",
+			"value": "user@gmail.com"
+		},
+    	"SMTP_PASS": {
+			"description": "The number of processes to run.",
+			"value": "yourpassword"
+		}
+	},
+
+	"image": "heroku/nodejs"
+}
