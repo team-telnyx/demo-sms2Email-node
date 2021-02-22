@@ -52,7 +52,7 @@ PORT=8081
 
 | Callback Type          | URL                               |
 | :--------------------- | :-------------------------------- |
-| Inbound SMS Callback | `{ngrok-url}/demo/telnyx-webhook` |
+| Inbound SMS Callback | `{ngrok-url}/telnyx-webhook` |
 
 
 ### Install
@@ -60,7 +60,7 @@ PORT=8081
 Run the following commands to get started
 
 ```
-$ git clone https://github.com/team-telnyx/demo-call-center.git
+$ git clone https://github.com/team-telnyx/demo-sms2Email-node.git
 $ npm install
 ```
 
@@ -89,7 +89,8 @@ Connections                   ttl     opn     rt1     rt5     p50     p90
                               0       0       0.00    0.00    0.00    0.00
 ```
 
-At this point you can point your application to generated ngrok URL + path (Example: `http://ngrok.io/telnyx-webhook`).
+### Update your Messaging Profile
+ At this point you will need to login to your Mission Control Account and Update  your Message Profile Inbound Webhook URL to the generated ngrok URL + path (Example: `http://ngrok.io/telnyx-webhook`).
 
 ### Run
 
