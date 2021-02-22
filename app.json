@@ -1,0 +1,7 @@
+{
+    "name": "Telnyx SMS to Email",
+    "description": "Node.js SMS to Email Sample Powered by Telnyx using Express",
+    "repository": "https://github.com/heroku/node-js-getting-started",
+    "logo": "https://node-js-sample.herokuapp.com/node.png",
+    "keywords": ["node", "express", "static", "telnyx"]
+  }
