@@ -23,9 +23,11 @@ You will need to set up:
 -   [NODE](https://developers.telnyx.com/docs/v2/development/dev-env-setup?lang=node&utm_source=referral&utm_medium=github_referral&utm_campaign=cross-site-link) installed with [HomeBrew](https://formulae.brew.sh/formula/node)
 -   Ability to receive webhooks (with something like [ngrok](https://developers.telnyx.com/docs/v2/development/ngrok?utm_source=referral&utm_medium=github_referral&utm_campaign=cross-site-link))
 
+-   [Gmail Account](https://accounts.google.com/SignUp?service=mail&continue=https://mail.google.com/mail/) You will want to setup a new gmail account specifically for this demo
+
 ## What you can do
 
--   This app will take all recieved SMS messages and send them to the email address you have provided in `DESTINATION_MAILBOX`
+-   This app will take all recieved SMS messages and send them to the email address you have provided in `DESTINATION_MAILBOX` using the [NodeMailer](https://nodemailer.com/about/) Module
 
 ## Usage
 
