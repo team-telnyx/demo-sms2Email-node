@@ -113,4 +113,8 @@ node server.js
 
 You should setup a new gmail account for the specific purpose of using this Application. Be sure to use a very complex password of 20+ charaters with upper, lower, number, and special characters. After you have setup this new gmail account, you will need to enable `LESS SECURE ACCESS`. Go to https://myaccount.google.com/lesssecureapps, and set to Yes.
 
+### Deploy to Heroku
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 
