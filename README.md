@@ -13,7 +13,7 @@ You will need to set up:
 -   [Telnyx Account](https://telnyx.com/sign-up?utm_source=referral&utm_medium=github_referral&utm_campaign=cross-site-link)
 -   [Telnyx Phone Number](https://portal.telnyx.com/#/app/numbers/my-numbers?utm_source=referral&utm_medium=github_referral&utm_campaign=cross-site-link) enabled with:
 
-    -   [Telnyx Messaing Application](https://portal.telnyx.com/#/app/messaing/applications?utm_source=referral&utm_medium=github_referral&utm_campaign=cross-site-link)
+    -   [Telnyx Messaging Profile](https://portal.telnyx.com/#/app/messaing/applications?utm_source=referral&utm_medium=github_referral&utm_campaign=cross-site-link)
 
 -   [NODE](https://developers.telnyx.com/docs/v2/development/dev-env-setup?lang=node&utm_source=referral&utm_medium=github_referral&utm_campaign=cross-site-link) installed with [HomeBrew](https://formulae.brew.sh/formula/node)
 -   Ability to receive webhooks (with something like [ngrok](https://developers.telnyx.com/docs/v2/development/ngrok?utm_source=referral&utm_medium=github_referral&utm_campaign=cross-site-link))
