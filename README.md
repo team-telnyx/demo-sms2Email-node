@@ -1,11 +1,12 @@
+<div align="center">
 # Telnyx Node SMS to Email Demo
 
 ![Telnyx](./logo-dark.png)
 
 
 
-The full documentation and tutorial is available on [developers.telnyx.com]
-
+The full documentation and tutorial is available on [developers.telnyx.com](https://developers.telnyx.com/docs/v2/development/dev-env-setup?lang=dotnet&utm_source=referral&utm_medium=github_referral&utm_campaign=cross-site-link)
+</div>
 ## Pre-Reqs
 
 You will need to set up:
