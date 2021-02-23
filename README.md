@@ -1,14 +1,11 @@
-
 <div align="center">
 
 # Telnyx Node SMS to Email Demo
 
-
 ![Telnyx](./logo-dark.png)
 
-
-
 The full documentation and tutorial is available on [developers.telnyx.com](https://developers.telnyx.com/docs/v2/development/dev-env-setup?lang=dotnet&utm_source=referral&utm_medium=github_referral&utm_campaign=cross-site-link)
+
 </div>
 
 ## Pre-Reqs
@@ -33,13 +30,14 @@ You will need to set up:
 
 The following environmental variables need to be set
 
-| Variable               | Description                                                                                                                                 |
-| :--------------------- | :------------------------------------------------------------------------------------------------------------------------------------------ |
-| `USER_EMAIL`       | Your Sending, SMTP User Email|
-| `USER_PASS` | Your Sending, SMTP User Password                                                            |
-| `DESTINATION_MAILBOX`           | The DID associated with the call control connection to be used for initating calls                                                          |
-| `APP_PORT`             | **Defaults to `8000`** The port the app will be served                                                                                   |
-
+| Variable              | Description                                                                        |
+| :-------------------- | :--------------------------------------------------------------------------------- |
+| `USER_EMAIL`          | Your Sending, SMTP User Email                                                      |
+| `USER_PASS`           | Your Sending, SMTP User Password                                                   |
+| `DESTINATION_MAILBOX` | The DID associated with the call control connection to be used for initating calls |
+| `APP_PORT`            | **Defaults to `8000`** The port the app will be served                             |
+| `TELNYX_PUBLIC_KEY`   | Your Telnyx Public Key Found in My Account Section of Telnyx Portal                |
+| `TELNYX_API_KEY`      | Your Telnyx API Key Found in your Telnyx Portal                                    |
 
 ### .env file
 
@@ -52,15 +50,15 @@ DESTINATION_MAILBOX=youremail@domain.com
 SMTP_USER=yoursendinguser@gmail.com
 SMTP_PASS=yoursendinguserpassowrd
 PORT=8081
-
+TELNYX_PUBLIC_KEY=KEYGOESHERE
+TELNYX_API_KEY=KEYGOESHERE
 ```
 
 ### Callback URLs For Telnyx Applications
 
-| Callback Type          | URL                               |
-| :--------------------- | :-------------------------------- |
+| Callback Type        | URL                          |
+| :------------------- | :--------------------------- |
 | Inbound SMS Callback | `{ngrok-url}/telnyx-webhook` |
-
 
 ### Install
 
@@ -97,7 +95,8 @@ Connections                   ttl     opn     rt1     rt5     p50     p90
 ```
 
 ### Update your Messaging Profile
- At this point you will need to login to your Mission Control Account and Update  your Message Profile Inbound Webhook URL to the generated ngrok URL + path (Example: `http://ngrok.io/telnyx-webhook`).
+
+At this point you will need to login to your Mission Control Account and Update your Message Profile Inbound Webhook URL to the generated ngrok URL + path (Example: `http://ngrok.io/telnyx-webhook`).
 
 ### Run
 
@@ -117,4 +116,10 @@ You should setup a new gmail account for the specific purpose of using this Appl
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
+You can Deploy this App directly to heroku if you do not have the capacity to host it yourself.
 
+-   Click the Deploy to Heroku Button Above
+-   Add in your appropriate config variables as outlined above in the Usage Section and Click Deploy App
+-   Click the Open App Button to view your server's address, copy it.
+-   Update Your Messaging Profile Inbound Webhook url to `https://your-apps-url.herokuapp.com/telnyx-webhook`
+- Click Save, Send yourself a test message

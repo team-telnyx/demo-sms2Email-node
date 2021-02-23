@@ -16,6 +16,14 @@
     	"SMTP_PASS": {
 			"description": "The password for the new Gmail address you create",
 			"value": "smtpUserPassword"
+		},
+		"TELNYX_PUBLIC_KEY": {
+			"description": "Your Telnyx Public Key Found in My Account Section of Telnyx Portal",
+			"value": "yourpublickey"
+		},
+		"TELNYX_API_KEY": {
+			"description": "Your Telnyx API Key Found in your Telnyx Portal",
+			"value": "smtpUserPassword"
 		}
 	},
 
