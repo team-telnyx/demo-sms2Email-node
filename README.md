@@ -58,7 +58,7 @@ TELNYX_API_KEY=KEYGOESHERE
 
 | Callback Type        | URL                          |
 | :------------------- | :--------------------------- |
-| Inbound SMS Callback | `{ngrok-url}/telnyx-webhook` |
+| Inbound SMS Callback | `{ngrok-url}/sms/telnyx-webhook` |
 
 ### Install
 
@@ -121,5 +121,5 @@ You can Deploy this App directly to heroku if you do not have the capacity to ho
 -   Click the Deploy to Heroku Button Above
 -   Add in your appropriate config variables as outlined above in the Usage Section and Click Deploy App
 -   Click the Open App Button to view your server's address, copy it.
--   Update Your Messaging Profile Inbound Webhook url to `https://your-apps-url.herokuapp.com/telnyx-webhook`
+-   Update Your Messaging Profile Inbound Webhook url to `https://your-apps-url.herokuapp.com/sms/telnyx-webhook`
 - Click Save, Send yourself a test message
